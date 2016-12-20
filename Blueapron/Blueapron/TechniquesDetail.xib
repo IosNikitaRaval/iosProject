@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="techniquesDetailCell" rowHeight="385" id="GQL-un-yof" customClass="tbl_TechniquesDetailsCell" customModule="Blueapron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="355"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GQL-un-yof" id="sUw-Cu-rZY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="354"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zv-Qz-SIT" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to : Prepare Italian Pasta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-RP-fiD">
+                                <rect key="frame" x="16" y="208" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WHS-uk-iP7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-aU-nn4">
+                                <rect key="frame" x="16" y="237" width="288" height="86"/>
+                                <string key="text">1 Cook and drain pasta as directed on package.
+2 Meanwhile, in large skillet, cook sausage over   medium heat, stirring frequently, until browned. Drain; return to skillet.
+3 Add tomatoes, cream and drained pasta to       sausage; stir gently to mix.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italianPasta" translatesAutoresizingMaskIntoConstraints="NO" id="WGU-9g-U42">
+                                <rect key="frame" x="8" y="8" width="304" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="gsY-tz-qWw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99992352724075317" green="1" blue="0.99988299608230591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f7G-RP-fiD" secondAttribute="trailing" constant="16" id="9jG-3c-ouo"/>
+                            <constraint firstAttribute="trailing" secondItem="WGU-9g-U42" secondAttribute="trailing" constant="8" id="K5l-Si-bzh"/>
+                            <constraint firstItem="WGU-9g-U42" firstAttribute="leading" secondItem="6zv-Qz-SIT" secondAttribute="leading" constant="8" id="Rsz-fE-1Df"/>
+                            <constraint firstAttribute="trailing" secondItem="HPz-aU-nn4" secondAttribute="trailing" constant="16" id="Upf-pL-j9t"/>
+                            <constraint firstItem="f7G-RP-fiD" firstAttribute="top" secondItem="WGU-9g-U42" secondAttribute="bottom" constant="8" id="X6n-in-QwJ"/>
+                            <constraint firstItem="HPz-aU-nn4" firstAttribute="leading" secondItem="6zv-Qz-SIT" secondAttribute="leading" constant="16" id="afJ-pM-T2h"/>
+                            <constraint firstItem="WGU-9g-U42" firstAttribute="top" secondItem="6zv-Qz-SIT" secondAttribute="top" constant="8" id="ljH-ij-67U"/>
+                            <constraint firstItem="f7G-RP-fiD" firstAttribute="leading" secondItem="6zv-Qz-SIT" secondAttribute="leading" constant="16" id="pi7-lK-a04"/>
+                            <constraint firstItem="HPz-aU-nn4" firstAttribute="top" secondItem="f7G-RP-fiD" secondAttribute="bottom" constant="8" id="zBX-z5-Ri4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6zv-Qz-SIT" secondAttribute="bottom" constant="4" id="86o-nF-zhJ"/>
+                    <constraint firstItem="6zv-Qz-SIT" firstAttribute="top" secondItem="sUw-Cu-rZY" secondAttribute="top" id="QxE-gm-BUP"/>
+                    <constraint firstItem="6zv-Qz-SIT" firstAttribute="leading" secondItem="sUw-Cu-rZY" secondAttribute="leading" id="afP-Le-lVY"/>
+                    <constraint firstAttribute="trailing" secondItem="6zv-Qz-SIT" secondAttribute="trailing" id="qSe-Ua-sB8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img_Techniques" destination="WGU-9g-U42" id="4RZ-bi-rdl"/>
+                <outlet property="lbl_TechniquesDetail" destination="HPz-aU-nn4" id="Ewp-vt-yUy"/>
+                <outlet property="lbl_TechniquesName" destination="f7G-RP-fiD" id="OnC-IC-sSw"/>
+                <outlet property="mainView" destination="6zv-Qz-SIT" id="XDx-Yu-mmj"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="italianPasta" width="1200" height="500"/>
+    </resources>
+</document>
